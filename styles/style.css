@@ -154,8 +154,9 @@ span{
 .div{
     display: flex;
     justify-content: center;
-   margin-right: 50px;
+    margin-right: 50px;
     margin-bottom: -110px;
+    animation: spin 5s linear infinite;
   
 }
 .tag{
@@ -331,7 +332,8 @@ align-items: center;
 .foot ul{
     list-style: none;
 }
-.foot ul li{
+.foot ul li a{
+    text-decoration: none;
     color:rgba(107, 114, 128, 1) ;
     font-size: .88rem;
     margin: 9px;
@@ -339,4 +341,30 @@ align-items: center;
 .icon{
     display: flex;
     gap: 8px;
+}
+a:hover{
+   padding: 5px;
+    transition: transform .1s ease  z-index .5s;
+    transform: scale(1.6);
+    z-index: 1;
+    background: linear-gradient(-33deg ,gray,rgb(237, 201, 207),rgb(234, 225, 234));
+    border-radius: 5px 1px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@keyframes spin{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.Plants button:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease;
+    border-radius: 10px 20px;
+    color: #eae2e2;
+    font-weight: 600;
+    background: linear-gradient(45deg ,rgba(233, 90, 8, 1), #8A6552,#462521,rgba(233, 90, 8, 1));
 }
