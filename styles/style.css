@@ -11,7 +11,14 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
+.btn-primary{
+    background-color:rgba(233, 90, 8, 1) ;
+    color: white;
+    font-size: .7rem;
+    font-weight: 500;
+    border: none;
+    padding: 9px;
+}
 
 /* body */
 body{
@@ -68,8 +75,55 @@ main section{
 span{
    color: rgba(233, 90, 8, 1); 
 }
-.Banner p{
+.Banner p ,.Plants p{
     font-size: .89rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+}
+
+/*plant section*/
+.Plants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Plants h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    margin: 0%;
+}
+.plants-garden{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card button{
+    width: 100%;
+} 
+.card h4{
+    margin: 0%;
+    color: #111111;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.card h5{
+    margin: 7px;
+    color: #111111;
+    font-size: .9rem;
+    font-weight: 600;
 }
