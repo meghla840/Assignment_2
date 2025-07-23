@@ -60,6 +60,7 @@ nav ul li:last-child a{
 /* main*/
 main section{
     margin-top: 90px;
+
 }
 /*section banner */
 .Banner{
@@ -75,7 +76,7 @@ main section{
 span{
    color: rgba(233, 90, 8, 1); 
 }
-.Banner p ,.Plants p{
+.Banner p ,.Plants p ,.para{
     font-size: .89rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -106,7 +107,8 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: 95%;
+   
     margin-bottom: 10px;
 }
 .card img{
@@ -126,4 +128,38 @@ span{
     color: #111111;
     font-size: .9rem;
     font-weight: 600;
+}
+/*Flowers & plants Lover section */
+.contain-flower{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
+}
+.contain-flower img{
+    width: 100%;
+
+}
+.flower-info{
+    width: 60%;
+    padding: 10px;
+}
+.flower-info ul li:first-child{
+    list-style: none;
+}
+.flower-info h4{
+    font-size: 2.5rem;
+    color: black;
+}
+.div{
+    display: flex;
+    justify-content: center;
+   margin-right: 50px;
+    margin-bottom: -110px;
+  
+}
+.tag{
+    width: 20%;
+    z-index: 1;
+   
 }
