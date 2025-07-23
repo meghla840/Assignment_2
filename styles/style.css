@@ -35,6 +35,8 @@ nav ul{
 }
 nav a{
     text-decoration: none;
+    font-size: .7rem;
+    font-weight: 600;
 }
 nav ul li:nth-child(1) a{
     color:rgba(37, 36, 50, 1) ;
@@ -46,4 +48,28 @@ nav ul li:nth-child(2) a,nav ul li:nth-child(3) a{
 nav ul li:last-child a{
     color: black;
     
+}
+
+/* main*/
+main section{
+    margin-top: 90px;
+}
+/*section banner */
+.Banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Banner h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+span{
+   color: rgba(233, 90, 8, 1); 
+}
+.Banner p{
+    font-size: .89rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
 }
