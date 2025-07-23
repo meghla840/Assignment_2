@@ -21,7 +21,7 @@
 }
 
 /* body */
-header ,main {
+header ,main ,.foot {
     margin: 0% 90px;
 }
 
@@ -76,7 +76,7 @@ main section{
 span{
    color: rgba(233, 90, 8, 1); 
 }
-.Banner p ,.Plants p ,.para ,.latest-Deal p{
+.Banner p ,.Plants p ,.para ,.latest-Deal p,.foot p{
     font-size: .89rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -319,4 +319,24 @@ flex-direction: column;
 text-align: center;
 justify-content: center;
 align-items: center;
+}
+/*Footer*/
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px;
+    line-height: 2;
+}
+.foot ul{
+    list-style: none;
+}
+.foot ul li{
+    color:rgba(107, 114, 128, 1) ;
+    font-size: .88rem;
+    margin: 9px;
+}
+.icon{
+    display: flex;
+    gap: 8px;
 }
