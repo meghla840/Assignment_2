@@ -489,5 +489,8 @@ main section{
     margin-top: 10px;
     margin-bottom: 40px;
 }
+.para{
+    width: 100%;
+}
 
 }
