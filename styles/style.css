@@ -155,13 +155,13 @@ span{
     margin: 10px;
 }
 .flower-info h4{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: black;
 }
 .div{
     display: flex;
     justify-content: center;
-    margin-right: 90px;
+    margin-right: 170px;
     margin-bottom: -110px;
     animation: spin 5s linear infinite;
   
@@ -170,6 +170,9 @@ span{
     width: 20%;
     z-index: 1;
    
+}
+.para{
+    width: 50%;
 }
 /*Latest Deal*/
 .latest-Deal{
@@ -386,18 +389,17 @@ a:hover{
 /*small device*/
 @media screen and (max-width:768px) {
    
-
-    body{
+body{
         padding:0 3px;
     
     }
-    header ,main ,.foot {
+header ,main ,.foot {
     margin: 0% 10px;
-}
+    }
 
-    header img{
+header img{
     width: 70%;
-}
+    }
 
 
 nav ul li:nth-child(1) a ,nav ul li:nth-child(2) a,nav ul li:nth-child(3) a{
@@ -435,7 +437,7 @@ main section{
 }
 
  
-}
+
 .flowers ,.f-1,.f-2,.content{
     width: 100%;
 
@@ -463,11 +465,6 @@ main section{
 }
 .f-3 h3{
    line-height: 0%;
-
-}
-
-
-.contentss h1{
 
 }
 
