@@ -21,6 +21,9 @@
 }
 
 /* body */
+body{
+    background-color: rgba(155, 209, 236, 0.1);
+}
 header ,main ,.foot {
     margin: 0% 90px;
 }
@@ -90,6 +93,9 @@ span{
     align-items: center;
     text-align: center;
 }
+.Plants p{
+    width: 50%;
+}
 .Plants h2{
     font-size: 1.8rem;
     font-weight: 700;
@@ -143,9 +149,10 @@ span{
 .flower-info{
     width: 60%;
     padding: 10px;
+    margin-left: 50px;
 }
-.flower-info ul li:first-child{
-    list-style: none;
+.flower-info h4{
+    margin: 10px;
 }
 .flower-info h4{
     font-size: 2.5rem;
@@ -154,7 +161,7 @@ span{
 .div{
     display: flex;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 90px;
     margin-bottom: -110px;
     animation: spin 5s linear infinite;
   
@@ -176,6 +183,7 @@ span{
 .flowers{
     display: flex;
     flex-direction: column;
+    gap: 10px;
     
 }
 .contain-img{
@@ -306,8 +314,9 @@ align-items: center;
 }
 .join h1{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
+   
 }
 .contentss{
 padding: auto;
@@ -321,6 +330,7 @@ text-align: center;
 justify-content: center;
 align-items: center;
 }
+
 /*Footer*/
 .foot{
     display: flex;
@@ -329,14 +339,16 @@ align-items: center;
     margin-top: 90px;
     line-height: 2;
 }
-.foot ul{
-    list-style: none;
+.features ,.contact{
+    display: flex;
+    flex-direction: column;
 }
-.foot ul li a{
+.foot  a{
     text-decoration: none;
     color:rgba(107, 114, 128, 1) ;
     font-size: .88rem;
     margin: 9px;
+    
 }
 .icon{
     display: flex;
@@ -345,13 +357,14 @@ align-items: center;
 a:hover{
    padding: 5px;
     transition: transform .1s ease  z-index .5s;
-    transform: scale(1.6);
+    transform: scale(1.1);
     z-index: 1;
     background: linear-gradient(-33deg ,gray,rgb(237, 201, 207),rgb(234, 225, 234));
     border-radius: 5px 1px;
     font-size: 1rem;
     font-weight: 700;
 }
+
 @keyframes spin{
     form{
         transform: rotate(0deg);
@@ -367,4 +380,110 @@ a:hover{
     color: #eae2e2;
     font-weight: 600;
     background: linear-gradient(45deg ,rgba(233, 90, 8, 1), #8A6552,#462521,rgba(233, 90, 8, 1));
+}
+
+/*responsive design */
+/*small device*/
+@media screen and (max-width:768px) {
+   
+
+    body{
+        padding:0 3px;
+    
+    }
+    header ,main ,.foot {
+    margin: 0% 10px;
+}
+
+    header img{
+    width: 70%;
+}
+
+
+nav ul li:nth-child(1) a ,nav ul li:nth-child(2) a,nav ul li:nth-child(3) a{
+    display: none;
+}
+
+
+main section{
+    margin-top: 40px;
+
+}
+
+.Banner{
+    flex-direction: column-reverse;
+}
+.Banner img{
+    width: 100%;
+}
+.Banner h1{
+    margin: 0%;
+}
+.plants-garden{
+    grid-template-columns: repeat(2,1fr);
+  
+}
+.Plants p{
+    width: 70%;
+}
+.contain-flower{
+   flex-direction: column;
+}
+.contain-flower img{
+    width: 100%;
+
+}
+.flower-info{
+    width: 100%;
+    padding: 0px; 
+    margin: 0;
+}
+.flower-info h4{
+    margin: 7px;
+}
+
+.div{
+    display: none;  
+}
+
+.contain-img{
+   flex-direction: column;
+}
+.f-3{
+    width: 105%;
+    margin: 0%;
+   height: 140px;
+}
+.f-3 h3{
+   line-height: 0%;
+
+}
+
+
+.contentss h1{
+
+}
+
+.form input[type="email"]{
+    width: 100%;
+}
+
+.join{
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    margin-top: 50px;
+    margin: 0px,0px;
+    width: 100%;
+    height: 270px;
+}
+
+.foot{
+    flex-direction: column;
+}
+
+.icon{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 }
