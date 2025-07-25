@@ -494,3 +494,106 @@ main section{
 }
 
 }
+
+/*medium device */
+@media screen and (min-width:576px) and (max-width:991px) {
+   
+body{
+        padding:0 3px;
+    
+    }
+header ,main ,.foot {
+    margin: 0% 10px;
+    }
+
+header img{
+    width: 100%;
+    }
+
+
+
+main section{
+    margin-top: 40px;
+
+}
+
+.Banner{
+    flex-direction: column-reverse;
+}
+.Banner img{
+    width: 100%;
+}
+.Banner h1{
+    margin: 0%;
+}
+.plants-garden{
+    grid-template-columns: repeat(3,1fr);
+  
+}
+.Plants p{
+    width: 70%;
+}
+.contain-flower{
+   flex-direction: column;
+}
+.contain-flower img{
+    width: 100%;
+
+}
+
+.flowers ,.f-1,.f-2,.content{
+    width: 100%;
+
+}
+.flower-info{
+    width: 100%;
+    padding: 0px; 
+    margin: 0;
+}
+.flower-info h4{
+    margin: 7px;
+}
+
+.div{
+    display: none;  
+}
+
+.contain-img{
+   flex-direction: column;
+}
+.f-3{
+    width: 100%;
+    margin: 0%;
+   height: 140px;
+}
+.f-3 h3{
+   line-height: 0%;
+
+}
+
+.form input[type="email"]{
+    width: 100%;
+}
+
+.join{
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    margin-top: 50px;
+    margin: 0px,0px;
+    width: 100%;
+    height: 270px;
+}
+
+.foot{
+    flex-direction: column;
+}
+
+.icon{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.para{
+    width: 100%;
+}
+
+}
